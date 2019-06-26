@@ -31,13 +31,13 @@ class ThreadSecondApproach(threading.Thread):
         print("Ending " + self.name)
 
 
-# thread0 = ThreadFirstApproach("Thread - First Approach")
+thread0 = ThreadFirstApproach("Thread - First Approach")
 thread1 = ThreadSecondApproach("Thread - Second Approach")
 
-# thread0.start()
+thread0.start()
 thread1.start()
 
-# thread0.join()
+thread0.join()
 thread1.join()
 
 classifier_first_feature = cl.statistical_tests(
